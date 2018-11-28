@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main4Activity">
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/media_image"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/androidrobot"
+                android:contentDescription="new post image"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+
+
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorwhite"
+                android:text="Devoir 3"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/toolbar"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nom"
+        android:text="nom"
+        android:layout_below="@+id/picture"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/codepermanent"
+        android:layout_below="@+id/nom"
+        android:text="code permanent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_below="@+id/codepermanent"
+        android:text="email"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msginscription"
+        android:layout_below="@+id/email"
+        android:text="Inscription IFT 201"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutfornote"
+        android:layout_below="@+id/msginscription"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msginscription"
+            android:text="Entrez votre apreciation"
+
+            />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/note"
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/msginscription"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutfornote"
+        android:id="@+id/retoura3"
+        android:text="Retour vers la liste"
+        />
+
+
+
+</RelativeLayout>

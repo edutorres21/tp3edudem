@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">tp3Eduardo</string>
+
+
+    <string-array name="listeusers">
+        <item>Steve jobs</item>
+        <item>Steve Wozniak </item>
+        <item>Vitalik buterin</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,107 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+
+        android:layout_marginBottom="20dp"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/media_image"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/androidrobot"
+                android:contentDescription="new post image"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorwhite"
+                android:text="Devoir 3"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <TextView
+            android:id="@+id/text_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/toolbarr"
+
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/text_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choissisez un nom"
+            android:layout_below="@+id/text_user"
+
+            />
+
+
+    
+    <ListView
+
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:id="@+id/liste"
+        android:layout_below="@+id/text_pass"
+
+
+
+        ></ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour au debut"
+        android:layout_below="@+id/liste"
+        android:id="@+id/btnretourdebut"
+        />
+
+
+</RelativeLayout>
