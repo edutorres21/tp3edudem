@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main4Activity extends AppCompatActivity {
 
@@ -43,6 +44,8 @@ public class Main4Activity extends AppCompatActivity {
         t2.setText(etudiant[pos].codepermanent);
         t3.setText(etudiant[pos].email);
 
+
+
         et.setText(""+etudiant[pos].note);
 
         bt=findViewById(R.id.retoura3);
@@ -51,8 +54,14 @@ public class Main4Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i= new Intent(Main4Activity.this,Main3Activity.class);
                 i.putExtra("listeetu",etudiant);
-                if(!et.getText().equals(""))
-                    etudiant[pos].note=Integer.parseInt(et.getText().toString());
+                boolean noteint=(Integer.parseInt(et.getText().toString())>3)? true:false;
+                if(et.getText().equals("")|| noteint) {
+                    Toast.makeText(getApplicationContext(), "Erreur: Note no valide note=0",
+                            Toast.LENGTH_LONG).show();
+                }
+                else{
+                    etudiant[pos].note = Integer.parseInt(et.getText().toString());
+                }
                 startActivity(i);
 
             }
